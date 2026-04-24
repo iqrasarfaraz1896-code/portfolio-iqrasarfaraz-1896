@@ -1,0 +1,187 @@
+## style.css
+
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#050816;
+    overflow:hidden;
+    color:white;
+}
+
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+    animation:fadeUp 1.2s ease;
+}
+
+.profile-image{
+    margin-bottom:25px;
+}
+
+.profile-image img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid rgba(255,255,255,0.2);
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.5),
+    0 0 50px rgba(56,189,248,0.2);
+
+    transition:0.5s ease;
+}
+
+.profile-image img:hover{
+    transform:scale(1.05);
+}
+
+.hello-text{
+    color:#38bdf8;
+    font-size:1.1rem;
+    margin-bottom:10px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-size:4.5rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:1.3rem;
+    color:#cbd5e1;
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.hero-description{
+    color:#94a3b8;
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-bottom:40px;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    color:white;
+    font-size:1.2rem;
+    text-decoration:none;
+    transition:0.4s ease;
+}
+
+.social-icons a:hover{
+    background:#38bdf8;
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 34px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.4s ease;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#38bdf8,#2563eb);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(56,189,248,0.4);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,0.2);
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#050816;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero h2{
+        font-size:1rem;
+    }
+
+    .profile-image img{
+        width:120px;
+        height:120px;
+    }
+
+}
+```
+
+---
+
+# This CSS file styles a personal portfolio webpage with a hero section, including a profile image, greeting text, social media icons, and buttons. It uses a dark background with light text and includes animations for the hero content and interactive elements. The design is responsive, adjusting font sizes and image dimensions for smaller screens.
